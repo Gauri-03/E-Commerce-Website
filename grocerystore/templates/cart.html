@@ -1,0 +1,25 @@
+{% extends "base.html" %}>
+    {% block title %} Cart {% endblock %}
+    
+    {% block body %}
+   <div class="cart-page">
+        <table class="cart-table">
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            {% for product,quantity in cart_products %}
+            <tr>
+                <td>{{product.name}}</td>
+                <td>{{quantity}}</td></td>
+                <td>{{product.price}}</td>
+            </tr>
+            <tr>
+
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <div class="text-center">TotalCost = {{ subtotal }}</div>
+    {% endblock %}

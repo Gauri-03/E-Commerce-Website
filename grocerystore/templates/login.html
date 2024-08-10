@@ -1,0 +1,44 @@
+{% extends "base.html" %}>
+    {% block title %} Login {% endblock %}
+    {% block navbar %}  
+    {% endblock %}
+{% block body %} 
+    <body class= "bg-image">
+    <form method="POST">
+    <div class="cardlogin" style="width: 18rem;">
+        <div class="card-body">
+            <h3 align="center">Login</h3>
+            <br>
+            <img src= "{{ url_for('static', filename = 'logo.png') }}" alt="Logo">
+            <br>
+            <div class="form-group">
+                <label for "username"></label>
+                <input 
+                type="text" 
+                class="form-control" 
+                id="username" 
+                name="username" 
+                placeholder="Username"
+                />
+            </div>
+            <br>
+            <div class="form-group">
+                <label for "password"></label>
+                <input 
+                type="password" 
+                class="form-control" 
+                id="password" 
+                name="password" 
+                placeholder="Enter your password"
+                />
+            </div>
+            <br>
+            <div class="text-center">
+                <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+            
+        </div>
+      </div>
+    </body>
+        
+{% endblock %}
