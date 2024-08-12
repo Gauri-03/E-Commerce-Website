@@ -1,6 +1,6 @@
-# Grocery-Express
+# Nature's Pantry
 
-**Grocery-Express** is a multi-user application where users can manage their grocery shopping by adding items to their cart and organizing purchases.
+**Nature's Pantry** is a multi-user application where users can manage their grocery shopping by adding items to their cart and organizing purchases.
 ## Technologies Used
 
 - **Python**: Core programming language for developing the controllers and managing application logic.
